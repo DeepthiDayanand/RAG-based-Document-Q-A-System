@@ -1,0 +1,13 @@
+{"question": "What is FastAPI used for?", "expected_doc_id": "fastapi.txt", "expected_keywords": ["API", "Python"]}
+{"question": "What Python library does FastAPI use for data validation?", "expected_doc_id": "fastapi.txt", "expected_keywords": ["Pydantic"]}
+{"question": "Why does FastAPI support asynchronous request handlers?", "expected_doc_id": "fastapi.txt", "expected_keywords": ["ASGI"]}
+{"question": "What is Chroma and how is it different from a hosted vector database?", "expected_doc_id": "vector_databases.txt", "expected_keywords": ["local", "embedded"]}
+{"question": "What is FAISS used for?", "expected_doc_id": "vector_databases.txt", "expected_keywords": ["similarity search"]}
+{"question": "Which company develops Pinecone and what is it optimized for?", "expected_doc_id": "vector_databases.txt", "expected_keywords": ["managed", "scale"]}
+{"question": "How many dimensions does the all-MiniLM-L6-v2 embedding model produce?", "expected_doc_id": "embeddings.txt", "expected_keywords": ["384"]}
+{"question": "Why must the same embedding model be used for documents and queries?", "expected_doc_id": "embeddings.txt", "expected_keywords": ["comparable"]}
+{"question": "What is a Dockerfile?", "expected_doc_id": "docker.txt", "expected_keywords": ["image", "instructions"]}
+{"question": "What does Docker Compose do?", "expected_doc_id": "docker.txt", "expected_keywords": ["multi-container", "YAML"]}
+{"question": "What are the two main phases of a RAG pipeline?", "expected_doc_id": "rag_concepts.txt", "expected_keywords": ["ingestion", "query"]}
+{"question": "What does recall@k measure in a RAG evaluation?", "expected_doc_id": "rag_concepts.txt", "expected_keywords": ["top", "retrieved"]}
+{"question": "Why is chunk overlap useful when splitting documents?", "expected_doc_id": "rag_concepts.txt", "expected_keywords": ["boundary", "context"]}

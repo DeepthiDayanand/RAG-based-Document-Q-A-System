@@ -1,0 +1,19 @@
+FastAPI is a modern Python web framework used for building APIs quickly and
+with strong data validation. It is built on top of Starlette for the web
+parts and Pydantic for data validation, and it generates interactive API
+documentation automatically using OpenAPI and Swagger UI.
+
+FastAPI relies heavily on Python type hints. When a function parameter is
+annotated with a type, FastAPI uses that annotation to validate incoming
+request data, serialize responses, and produce accurate documentation
+without any extra configuration.
+
+Because it is built on ASGI rather than WSGI, FastAPI supports asynchronous
+request handlers natively, which makes it well suited for I/O-bound
+workloads such as calling external APIs, databases, or, in this project,
+a vector database and an LLM.
+
+A typical FastAPI application defines route handlers with decorators like
+@app.get and @app.post, and uses Pydantic models to describe the shape of
+request bodies and responses, giving you validation and documentation for
+free.

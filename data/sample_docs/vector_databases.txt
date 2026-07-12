@@ -1,0 +1,24 @@
+A vector database stores data as high-dimensional numeric vectors, called
+embeddings, and is optimized for finding the vectors most similar to a
+given query vector. This "nearest neighbor" search is the core operation
+behind retrieval-augmented generation systems.
+
+Chroma is an open-source, embedded vector database that can run entirely
+locally, persist its index to disk, and requires no separate server
+process for small to medium workloads. It stores documents, their
+embeddings, and arbitrary metadata together, and supports cosine, L2, or
+inner-product similarity.
+
+Pinecone is a managed, cloud-hosted vector database designed to scale to
+billions of vectors with low query latency, at the cost of running as a
+paid external service rather than an embedded local library.
+
+FAISS, developed by Meta, is a library (not a full database) for efficient
+similarity search over dense vectors. It offers many index types, including
+ones that trade a small amount of recall for large gains in search speed
+and memory efficiency, which matters when a collection grows into the
+millions of vectors.
+
+Choosing between these options usually comes down to scale, whether you
+need a managed service, and how much operational complexity you're willing
+to take on.

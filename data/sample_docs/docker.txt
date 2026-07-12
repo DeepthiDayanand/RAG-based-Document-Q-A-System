@@ -1,0 +1,19 @@
+Docker is a platform for packaging an application together with all of its
+dependencies into a single, portable unit called a container. Containers
+share the host machine's kernel but are otherwise isolated from each other,
+which makes them much lighter weight than full virtual machines.
+
+A Dockerfile is a text file containing instructions for building a Docker
+image: which base image to start from, what dependencies to install, what
+files to copy in, and what command to run when a container starts.
+
+Docker Compose is a tool for defining and running multi-container
+applications using a single YAML file. For a RAG system, a typical
+docker-compose.yml might define one service for the FastAPI backend and
+another for a standalone vector database, so both can be started together
+with a single command.
+
+Containerizing a machine learning service like this one is useful because
+it pins exact versions of Python, the embedding model's dependencies, and
+the vector database client, so the app behaves the same way on a laptop,
+a CI runner, and a production server.

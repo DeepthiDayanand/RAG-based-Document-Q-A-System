@@ -1,0 +1,19 @@
+An embedding model converts text into a fixed-length vector of numbers such
+that semantically similar pieces of text end up close together in that
+vector space. This property is what makes semantic search possible: instead
+of matching exact keywords, a search compares meaning.
+
+Sentence-transformers is a popular Python library for producing sentence
+and paragraph embeddings. The all-MiniLM-L6-v2 model is a compact,
+distilled model in that library that produces 384-dimensional embeddings.
+It runs quickly on CPU, which makes it a practical default for local
+retrieval pipelines where you don't want to depend on a paid embedding API.
+
+Larger embedding models, or hosted APIs such as OpenAI's or Voyage AI's
+embedding endpoints, typically produce higher-dimensional vectors and can
+capture more nuance, at the cost of higher latency, API fees, and a network
+dependency.
+
+In a RAG pipeline, the same embedding model must be used to embed both the
+documents at ingestion time and the user's query at search time, since
+embeddings from different models are not directly comparable to each other.
